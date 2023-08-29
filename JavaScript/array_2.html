@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        numbers = []
+        numbers.push("One")
+        numbers.push("Two")
+        numbers.push("Three")
+        for (j = 0 ; j < numbers.length ; ++j){
+            document.write("Element " + j + " = " + numbers[j] + "<br>")}
+
+        balls = {"golf": "Golf balls, 6",
+                "tennis": "Tennis balls, 3",
+                "soccer": "Soccer ball, 1",
+                "ping": "Ping Pong balls, 1 doz"}
+        for (ball in balls){
+            document.write(ball + " = " + balls[ball] + "<br>")}
+
+        checkerboard = Array(
+                        Array(' ', 'o', ' ', 'o', ' ', 'o', ' ', 'o'),
+                        Array('o', ' ', 'o', ' ', 'o', ' ', 'o', ' '),
+                        Array(' ', 'o', ' ', 'o', ' ', 'o', ' ', 'o'),
+                        Array(' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '),
+                        Array(' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '),
+                        Array('O', ' ', 'O', ' ', 'O', ' ', 'O', ' '),
+                        Array(' ', 'O', ' ', 'O', ' ', 'O', ' ', 'O'),
+                        Array('O', ' ', 'O', ' ', 'O', ' ', 'O', ' '))
+        document.write("<pre>")
+        for (j = 0 ; j < 8 ; ++j)
+        {
+            for (k = 0 ; k < 8 ; ++k){
+                document.write(checkerboard[j][k] + " ")}
+            document.write("<br>")
+        }
+        document.write("</pre>")
+ 
+        pets = ["Cat", "Dog", "Rabbit", "Hamster"]
+        pets.forEach(output)
+        function output(element, index, array)
+        {
+            document.write("Element at index " + index + " has the value " +element + "<br>")
+        }
+
+       </script>
+</body>
+</html>

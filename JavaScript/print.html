@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello world</title>
+</head>
+<body>
+    <script>
+        document.write("Hello World <br>")
+
+        document.write("this is a javaScript document <br>")
+
+        var face = [['R', 'G', 'Y'], ['W', 'R', 'O'], ['Y', 'W', 'G']]
+        document.write(face[1][2]+"<br>")
+
+        top = ['R', 'G', 'Y']
+        mid = ['W', 'R', 'O']
+        bot = ['Y', 'W', 'G']
+        face1 = [top, mid, bot]
+        document.write(face1[2][0])
+
+        document.write("<br>"+(13 + 2))
+
+        var messages=4
+        document.write("<br>You have " + messages + " messages.<br>")
+
+        n = '838102050' // Set 'n' to a string
+        document.write('n = ' + n + ', and is a ' + typeof n + '<br>')
+        n = 12345 * 67890; // Set 'n' to a number
+        document.write('n = ' + n + ', and is a ' + typeof n + '<br>')
+        n += ' plus some text' // Change 'n' from a number to a string
+        document.write('n = ' + n + ', and is a ' + typeof n + '<br>')
+        
+        var n = "123"
+        //n *= 1 // Convert 'n' into a number
+        n = parseInt(n) // Convert 'n' into an integer number
+        document.write("<br>"+parseInt(n))
+        n = parseFloat(n)// Convert 'n' into a floating point number
+        document.write("<br>"+parseFloat(n))
+        n = 123
+        n = n.toString() // Convert 'n' into a string
+        //n += "" // Convert 'n' into a string
+        document.write('<br'+n.toString())
+    </script>
+    <noscript>
+        <br>
+        Your browser doesn't support or has disabled JavaScript
+    </noscript>   
+</body>
+</html>

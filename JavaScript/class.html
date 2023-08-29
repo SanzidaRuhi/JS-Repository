@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function User(forename, username, password)
+        {
+        this.forename = forename
+        this.username = username
+        this.password = password
+        this.showUser = function()
+            {
+                document.write("Forename: " + this.forename + "<br>")
+                document.write("Username: " + this.username + "<br>")
+                document.write("Password: " + this.password + "<br>")
+            }
+        }
+
+        a=new User("abc","def",123)
+        a.showUser()
+        function User(forename, username, password)
+        {
+            this.forename = forename
+            this.username = username
+            this.password = password
+            this.showUser = showUser
+        }
+ 
+        function showUser()
+        {
+            document.write("Forename: " + this.forename + "<br>")
+            document.write("Username: " + this.username + "<br>")
+            document.write("Password: " + this.password + "<br>")
+        }
+        details = new User("Wolfgang", "w.a.mozart", "composer")
+        details.showUser()
+  
+        function User(forename, username, password)
+        {
+            this.forename = forename
+            this.username = username
+            this.password = password
+            User.prototype.showUser = function()
+            {
+                document.write("Forename: " + this.forename + "<br>")
+                document.write("Username: " + this.username + "<br>")
+                document.write("Password: " + this.password + "<br>")
+            }
+        }
+        b = new User("Wolf", "mozart", "composer")
+        b.showUser()
+</script>
+</body>
+</html>

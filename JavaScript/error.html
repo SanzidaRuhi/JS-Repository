@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        onerror = errorHandler
+        document.writ("Welcome to this website") // Deliberate error
+        function errorHandler(message, url, line)
+        {
+            out = "Sorry, an error was encountered.<br>";
+            out += "Error: " + message + "<br>";
+            out += "URL: " + url + "<br>";
+            out += "Line: " + line + "<br>";
+            out += "Click OK to continue.<br>";
+            //alert(out);
+            document.write(out)
+            return true;
+        }
+       </script>     
+</body>
+</html>

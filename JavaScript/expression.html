@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("a: " + (42 > 3) + "<br>")//ans is true or false
+        document.write("b: " + (91 < 4) + "<br>")
+        document.write("c: " + (8 == 2) + "<br>")
+        document.write("d: " + (4 < 17) + "<br>")
+
+        myname = "Peter"
+        myage = 24
+        document.write("a: " + 42 + "<br>") // Numeric literal
+        document.write("b: " + "Hi" + "<br>") // String literal
+        document.write("c: " + true + "<br>") // Constant literal
+        document.write("d: " + myname + "<br>") // String variable
+        document.write("e: " + myage + "<br>") // Numeric variable
+
+        day_number = 127 // For example
+        days_to_new_year = 366 - day_number
+        if (days_to_new_year < 30) document.write("It's nearly New Year<br>")
+        else document.write("It's a long time to go<br>")
+
+        a = 3.1415927
+        b = "3.1415927"
+        if (a == b) document.write("1<br>")//== means equals
+        if (a === b) document.write("2<br>")//=== means equals and same type
+
+        a = 7; b = 11
+        if (a > b) document.write("a is greater than b<br>")
+        if (a < b) document.write("a is less than b<br>")
+        if (a >= b) document.write("a is greater than or equal to b<br>")
+        if (a <= b) document.write("a is less than or equal to b<br>")
+
+        a = 1; b = 0
+        document.write((a && b) + "<br>")
+        document.write((a || b) + "<br>")
+        document.write(( !b ) + "<br>")
+        
+        string = "The quick brown fox jumps over the lazy dog"
+        with (string)
+        {
+            document.write("The string is " + length + " characters<br>")
+            document.write("In upper case it's: " + toUpperCase()+"<br>")
+        }
+       </script>      
+</body>
+</html>

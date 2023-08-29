@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+</head>
+<body>
+    <div id="box">i'm a box</div>
+    <script>
+        var box1=document.getElementById('box'),
+        boxstyle=box1.style;
+        //set individual properties
+        /*boxstyle.width='100px';
+        boxstyle.height='100px';
+        boxstyle.backgroundColor="red";*/
+        //event handler
+        /*box1.onclick=function(){
+            boxstyle.backgroundColor='brown';
+        }*/
+        //set style using attribute
+        box1.setAttribute('style','width:100px; height:100px; background-color:red;');
+    </script>
+</body>
+</html>

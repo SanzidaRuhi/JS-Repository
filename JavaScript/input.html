@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+</head>
+<body>
+    
+    <input type="text" id="entry">
+    <span id="output">start typing</span>
+    
+    <script>
+        var app={};
+        //a shorter way to get elements
+        app.getElement=function(element){
+            return document.getElementById("element")
+        }
+        //get elements required
+        app.entry=app.getElement('entry');
+        app.output=app.getElement('output');
+        //create event handler
+        app.entry.onkeyup=function(){
+            console.log("worked")
+        }
+        app.entry.onkeyup=function(){
+            app.output.innerText=this.innerText;
+        }
+    </script>
+</body>
+</html>

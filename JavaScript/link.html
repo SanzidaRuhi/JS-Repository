@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Link Test</title>
+    </head>
+    <body>
+        <a id="mylink" href="http://mysite.com">Click me</a><br>
+        <a href="https://www.youtube.com">youtube</a><br>
+        <script>
+            //url = document.links.mylink.href//use of dom
+            url=mylink.href
+            document.write('The URL is ' + url+"<br>")
+
+            url = document.links[0].href
+            document.write(url+"<br>")
+
+            numlinks = document.links.length
+            for (j=0 ; j < document.links.length ; ++j){
+                 document.write(document.links[j].href + '<br>')}//display all links in a document
+
+            function $(id)
+            {
+                return document.getElementById(id)
+            }
+            $(mylink)
+        </script>
+    </body>
+</html>

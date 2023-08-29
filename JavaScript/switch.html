@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        page="News"
+        switch (page)
+        {
+        case "Home":
+            document.write("You selected Home")
+            break
+        case "About":
+            document.write("You selected About")
+            break
+        case "News":
+            document.write("You selected News")
+            break
+        case "Login":
+            document.write("You selected Login")
+            break
+        case "Links":
+            document.write("You selected Links")
+            break
+        default:
+            document.write("Unrecognized selection")
+            break
+        }
+        
+        heroName="Batman"
+        //heroName="Spiderman"
+        switch (heroName)
+        {
+        case "Superman":
+        case "Batman":
+        case "Wonder Woman":
+            document.write("<br>Justice League")
+            break
+        case "Iron Man":
+        case "Captain America":
+        case "Spiderman":
+            document.write("<br>The Avengers")
+            break
+        default:
+            document.write("Unrecognized selection")
+            break
+        }
+       </script>
+</body>
+</html>

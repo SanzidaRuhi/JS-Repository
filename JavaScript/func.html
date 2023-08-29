@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isBiggerThan10(element, index, array)
+        {
+            return element > 10
+        }
+        result = [2, 5, 8, 1, 4].some(isBiggerThan10); // result will be false
+        document.write(result)
+        document.write("<br>")
+        result = [12, 5, 8, 1, 4].some(isBiggerThan10); // result will be true
+        document.write(result)
+        document.write("<br>")
+
+        animals = ['cat', 'dog', 'cow', 'horse', 'elephant']
+        offset = animals.indexOf('cow')
+        document.write(offset)
+        document.write("<br>")
+
+        fruit = ["Banana", "Grape"]
+        veg = ["Carrot", "Cabbage"]
+        document.write(fruit.concat(veg))
+        document.write("<br>")
+
+        pets = ["Cat", "Dog", "Fish"]
+        more_pets = pets.concat("Rabbit", "Hamster")
+        document.write(more_pets)
+        document.write("<br>")
+
+        pets = ["Cat", "Dog", "Rabbit", "Hamster"]
+        document.write(pets.join() + "<br>")//Without a parameter, join uses a comma to separate the elements
+        document.write(pets.join(' ') + "<br>")
+        document.write(pets.join(' : ') + "<br>")
+        document.write("<br>")
+
+        sports = ["Football", "Tennis", "Baseball", "Hockey"]
+        sports.reverse()
+        document.write(sports)
+        document.write("<br>")
+    </script>
+</body>
+</html>

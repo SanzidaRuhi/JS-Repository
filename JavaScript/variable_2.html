@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        test()
+        if (typeof a != 'undefined') document.write('a = "' + a + '"<br>')
+        if (typeof b != 'undefined') document.write('b = "' + b + '"<br>')
+        if (typeof c != 'undefined') document.write('c = "' + c + '"<br>')
+        function test()
+        {
+        a = 123
+        var b = 456
+        if (a == 123) var c = 789
+        }
+
+        var hello = "Hello there"
+        var counter = 1
+        if (counter > 0)
+        {
+            var hello = "How are you?"
+        }
+        document.write(hello)
+
+        //declaring variables using let keyword allows to declare variables statistically and doesn't allow it to change further
+        // let hello1 = "Hello there"
+        // let counter = 1
+        // if (counter > 0)
+        // {
+        //     let hello1 = "How are you?"
+        // }
+        // document.write(hello1)
+
+        //declaring variables using const keyword will block any types of change and shows no result
+        // const hello = "Hello there"
+        // let counter = 1
+        // if (counter > 0)
+        // {
+        //  hello = "How are you?"
+        // }
+        // document.write(hello)
+    </script>
+</body>
+</html>
